@@ -1,4 +1,4 @@
-This post contains instructions to program the EZCOO SP12H2 HDMI splitters with a custom firmware that:
+This repo contains instructions to program the EZCOO SP12H2 HDMI splitters with a custom firmware that:
 
 * Provides all possible Max Luminance options
 * Changes colorspace to BT2020 (vs. DCI-P3 in the original)
