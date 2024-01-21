@@ -2,7 +2,7 @@ import re
 import sys
 
 def check_dolby_vision(ecid_data):
-    if 'EB0146D000' in ecid_data:
+    if ("EB0146D000" in ecid_data) or ("eb0146d000" in ecid_data):
         print('Dolby Vision Capable')
         print_ecid(ecid)
         print('\n' * 2)  # Two line breaks between EDIDs
@@ -38,6 +38,5 @@ matches = re.finditer('00ffffffffffff', ecid_data, re.IGNORECASE)
 for match in matches:
     start_index = match.start()
     end_index = start_index + 512
-
     ecid = ecid_data[start_index:end_index]
     check_dolby_vision(ecid)
